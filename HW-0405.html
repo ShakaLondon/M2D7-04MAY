@@ -529,8 +529,17 @@
 
       // EX13) Write a function to change the background of the jumbotron
 
+      function jumboBack(){
 
+        let jumboSelect = document.querySelector("div.jumbotron")
 
+        jumboSelect.removeAttribute('bg-dark')
+
+        jumboSelect.setAttribute('class', 'bg-light')
+
+      }
+
+      let bgChange = jumboBack()
 
       /*
         JS Exercises

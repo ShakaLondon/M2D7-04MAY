@@ -499,10 +499,40 @@
     </footer>
 
     <script>
+      // EX11) Write a function to add a new link into the navbar
+
+      function addLinkNav (){
+        let newLink = document.createElement("a")
+
+        newLink.setAttribute('class', 'p-2'+'text-muted')
+
+        newLink.innerHTML = 'International'
+
+        let navBar = document.querySelector('nav.nav')
+
+        navBar.appendChild(newLink)
+
+
+      }
+
+      let addNavLink = addLinkNav()
+
+      // EX12) Write a function to change the color of the main title
+
+      function changeMainTitle (){
+        let mainTitle = document.querySelector("h1.display-4")
+
+        var sheet = window.document.styleSheets[0];
+sheet.insertRule('strong { color: red; }', sheet.cssRules.length);
+      }
+
+
+
+
       /*
         JS Exercises
-        EX11) Write a function to add a new link into the navbar
-        EX12) Write a function to change the color of the main title
+        
+        
         EX13) Write a function to change the background of the jumbotron
         EX14) Write a function to remove all the links under "Elsewhere"
         EX15) Write a function to change the column size for post headings

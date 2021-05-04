@@ -522,9 +522,12 @@
       function changeMainTitle (){
         let mainTitle = document.querySelector("h1.display-4")
 
-        var sheet = window.document.styleSheets[0];
-sheet.insertRule('strong { color: red; }', sheet.cssRules.length);
+        mainTitle.style.color = "blue"
       }
+
+      let titleColor = changeMainTitle()
+
+      // EX13) Write a function to change the background of the jumbotron
 
 
 
@@ -533,7 +536,7 @@ sheet.insertRule('strong { color: red; }', sheet.cssRules.length);
         JS Exercises
         
         
-        EX13) Write a function to change the background of the jumbotron
+        
         EX14) Write a function to remove all the links under "Elsewhere"
         EX15) Write a function to change the column size for post headings
         EX16) Write a function to remove the "Search" magnifying glass icon
